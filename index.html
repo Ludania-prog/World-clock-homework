@@ -7,9 +7,69 @@
 
     <title>World Clock</title>
   </head>
-  <body>
-    <h1>World Clock</h1>
 
+  <body>
+    <div class="container">
+      <h1><a href="/">World Clock</a></h1>
+
+      <select id="city">
+        <option value="">Select a city..</option>
+        <option value="current">My current location</option>
+        <option value="America/New_York">New York</option>
+        <option value="America/Sao_Paulo">São Paulo</option>
+        <option value="America/Montreal">Montreal</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="Europe/Oslo">Oslo</option>
+        <option value="Europe/Dublin">Dublin</option>
+        <option value="Africa/Luanda">Luanda</option>
+        <option value="Africa/Kinshasa">Kinshasa</option>
+        <option value="Africa/Maputo">Maputo</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Africa/Johannesburg">Johannesburg</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date">April 4 2025</div>
+          </div>
+          <div class="time">6:47<small>AM</small></div>
+        </div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date">April 4 2025</div>
+          </div>
+          <div class="time">6:47<small>AM</small></div>
+        </div>
+      </div>
+      <div class="city" id="lisbon">
+        <div>
+          <h2>Lisbon</h2>
+          <div class="date">April 4 2025</div>
+        </div>
+        <div class="time">6:47<small>AM</small></div>
+      </div>
+    </div>
+
+    <footer>
+      This project was coded by
+      <strong>
+        <a href="https://github.com/Ludania-prog"> Ludania David</a></strong
+      >
+      and is
+      <a
+        href="https://github.com/Ludania-prog/Wold-Clock-Project"
+        target="_blank"
+        >open sourced on GitHub</a
+      >
+      hosted on <a href="https://worldclockwork.netlify.app/">Netlify</a>
+    </footer>
     <script src="javascript/index.js"></script>
   </body>
 </html>
