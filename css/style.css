@@ -1,3 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: lightcoral;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1b1a 0%, #3a2f2b 50%, #4b3f3a 100%);
+  color: #f5f2ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.container {
+  background: linear-gradient(145deg, #2d2623, #3f3632);
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 30px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 40px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f5f2ef;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #f5f2ef;
+  transition: color 0.3s;
+}
+
+h1 a:hover {
+  color: #d7b28a;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #5a4c46;
+  border-radius: 10px;
+  background: #2b2522;
+  color: #f5f2ef;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: border 0.3s, background 0.3s;
+}
+
+select:hover,
+select:focus {
+  border-color: #d7b28a;
+  background: #3a312d;
+  outline: none;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #3a312e, #2b2522);
+  padding: 15px 20px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+  transition: 0.3s;
+}
+
+.city:hover {
+  background: linear-gradient(145deg, #4a3e39, #2d2623);
+  transform: scale(1.01);
+}
+
+.city h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f2ef;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #b8aaa4;
+}
+
+.time {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #d7b28a;
+}
+
+.time small {
+  font-size: 0.7em;
+  margin-left: 4px;
+  vertical-align: top;
+  color: #c7a078;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b8aaa4;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #d7b28a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #f5f2ef;
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.city {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.time {
+  margin-top: 5px;
 }
